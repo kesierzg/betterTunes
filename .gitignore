@@ -1,0 +1,4 @@
+/target
+.DS_Store
+# A copy of Apple's iTunes, used only to check generated AppleScript; not ours to ship.
+/iTunes.app

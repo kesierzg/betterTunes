@@ -1,0 +1,8 @@
+most important:
+
+- comaptilibty with itunes library files
+- compitiblity with ipod and iphones no matter firmware
+
+useful:
+
+- remove unsupported characters for devices that cant display them

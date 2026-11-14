@@ -1,0 +1,17 @@
+[package]
+name = "bettertunes-device"
+description = "Talks to iPods, iPhones and iPod touches for betterTunes"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+libc = "0.2"
+nusb = "0.2"
+openssl = { version = "0.10.82", features = ["vendored"] }
+plist = "1"
+
+[build-dependencies]
+# Not used directly: openssl-sys builds the bundled OpenSSL with this crate, and
+# these features turn on SSL 3 and old ciphers for iPhone OS 1.x devices.
+openssl-src = { version = "300.6", features = ["ssl3", "weak-crypto"] }

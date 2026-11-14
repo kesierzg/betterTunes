@@ -1,0 +1,17 @@
+[package]
+name = "bettertunes-core"
+description = "Library formats and data model for betterTunes"
+version.workspace = true
+license.workspace = true
+edition.workspace = true
+
+[dependencies]
+aes = "0.8"
+flate2 = "1"
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
+plist = "1"
+serde = { version = "1.0.229", features = ["derive"] }
+sha1 = "0.10"
+
+[dev-dependencies]
+image = { version = "0.25", default-features = false, features = ["jpeg", "png"] }
